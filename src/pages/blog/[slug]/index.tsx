@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Post() {
+const index = () => {
   return (
-    <div>Post</div>
+    <div>index</div>
   )
 }
 
-export default Post
+export default index

@@ -30,6 +30,7 @@ import { Container, Typography, Paper, Box, Divider, Avatar } from '@mui/materia
 
 
 interface BlogPost {
+  map(arg0: (post: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.PromiseLikeOfReactNode | Iterable<React.ReactNode> | null | undefined; excerpt: string | undefined; slug: any; featuredImage: string | undefined; author: { image: string | undefined; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.PromiseLikeOfReactNode | Iterable<React.ReactNode> | null | undefined; }; createdAt: string | number | Date; content: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactPortal | React.PromiseLikeOfReactNode | Iterable<React.ReactNode> | null | undefined; }) => React.JSX.Element): unknown;
   title: string;
   excerpt: string;
   content: string;
@@ -49,7 +50,7 @@ interface BlogPostProps {
 const BlogPost: React.FC<BlogPostProps> = ({ posts }) => {
   return (
     <>
-      {posts.map((post) => (
+      {posts.map((post: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; excerpt: string | undefined; slug: any; featuredImage: string | undefined; author: { image: string | undefined; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; }; createdAt: string | number | Date; content: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; }) => (
         <div>
           <NextSeo
         title={post.title}
