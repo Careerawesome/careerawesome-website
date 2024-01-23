@@ -11,3 +11,10 @@ export default function handler(
 ) {
   res.status(200).json({ name: 'ayoade kayode' })
 }
+
+// // api.js
+// export const fetchCategories = async () => {
+//   const response = await fetch('https://api.careerawesome.com/api/posts/category');
+//   const categories = await response.json();
+//   return categories;
+// };
