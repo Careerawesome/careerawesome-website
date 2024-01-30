@@ -2,7 +2,7 @@ import React from "react";
 
 const Post = ({ post }: any) => {
   // We get the blog post and then render it 
-
+  console.log(post)
   return <div>Post</div>;
 };
 
@@ -15,11 +15,12 @@ export async function getStaticPaths() {
   const paths = posts.map((post: { slug: any }) => ({
     params: { slug: post.slug },
   }));
-  return { paths, fallback: false };
+  // console.log(paths)
+  return { paths, fallback: "blocking" };
 }
 
 export async function getStaticProps({ params }: any) {
   const res = await fetch(`https://api.careerawesome.com/api/posts/${params.slug}`);
   const post = await res.json();
-  return { props: { post } };
+  return { props: { post },  revalidate: 5000 };
 }

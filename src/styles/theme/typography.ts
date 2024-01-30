@@ -1,3 +1,8 @@
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+
+
 function pxToRem(value:number):string {
     return `${value / 16}rem`;
   }
@@ -24,7 +29,7 @@ function pxToRem(value:number):string {
     };
   }
   
-  const FONT_PRIMARY = `"Inter", sans-serif`;
+  const FONT_PRIMARY = inter.style.fontFamily
   
   const typography = {
     fontFamily: FONT_PRIMARY,
@@ -87,19 +92,16 @@ function pxToRem(value:number):string {
     },
     body1: {
       lineHeight: 1.6,
-      fontFamily:"Poppins",
       color:"#132538cc",
       fontSize: pxToRem(16)
     },
     body2: {
       lineHeight: 22 / 14,
-      fontFamily:"Poppins",
       color:"#132538cc",
       fontSize: pxToRem(14)
     },
     caption: {
       lineHeight: 1.5,
-      fontFamily:"Poppins",
       color:"#132538cc",
       fontSize: pxToRem(12)
     },
@@ -114,7 +116,6 @@ function pxToRem(value:number):string {
       fontWeight: 500,
       lineHeight: 27 / 15,
       fontSize: pxToRem(12),
-      fontFamily:"Poppins",
       textTransform: 'capitalize'
     }
   };
