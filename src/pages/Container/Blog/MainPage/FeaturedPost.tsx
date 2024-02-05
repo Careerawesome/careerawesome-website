@@ -12,6 +12,7 @@ import Image from 'next/image';
 import CardMedia from '@mui/material/CardMedia'
 import Avatar from '@mui/material/Avatar';;
 import Container from '@mui/material/Container'
+import FeaturedAuthor from './FeaturedAuthor'
 
 interface Post {
     excerpt: ReactNode;
@@ -119,6 +120,7 @@ function FeaturedPost() {
                                                     </Box>
                                                 </Box>
                                             </Card>
+
                                         </Box>
                                     </Grid>
                                 )
