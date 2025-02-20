@@ -17,26 +17,26 @@ function PageHeader() {
         <Box>
             <Container>
                 <Box sx={{ paddingBlockStart: "5rem" }}>
-                    <Grid spacing={4} container>
+                    <Grid spacing={5} sx={{alignItems:"center"}} container>
                         <Grid lg={5} md={5}>
                             {/* this is the content  */}
                             <Box>
                                 <Box>
                                     <Typography gutterBottom variant='h1'>
-                                        Empowering your path: your guide to professional development.
+                                        <span>Empowering</span> your path: guide to professional development.
                                     </Typography>
-                                    <Typography gutterBottom variant='body1'>
-                                        Let CareerAwesome be your compass as you navigate the exciting landscape of professional growth. Unleash your potential, learn from insightful articles, and shape a career that's uniquely yours.
+                                    <Typography gutterBottom color="text.secondary" variant='body1'>
+                                        Let Careerawesome be your compass as you navigate the exciting landscape of professional growth. Unleash your potential, learn from insightful articles, and shape a career that's uniquely yours.
                                     </Typography>
                                 </Box>
                                 <Box>
                                     {/* This is the CTA  */}
-                                    <Box sx={{ mt: 4, mb:1 }}>
+                                    <Box sx={{ mt: 3, mb:1 }}>
                                         <Button size='large' variant='contained'>
                                             Join our community
                                         </Button>
                                     </Box>
-                                    <Typography variant='caption'>
+                                    <Typography  color="text.secondary" variant='body2'>
                                         Join thousands of subscribers and get lessons on how to grow your startup.
                                     </Typography>
                                 </Box>
@@ -56,9 +56,9 @@ function PageHeader() {
                                 <Box>
                                     <Card>
                                         <img
-                                            style={{ width: "100%", height:"60vh" }}
-                                            src="https://clickup.com/blog/wp-content/uploads/2023/11/ClickUp-List-of-the-Top-PMOs-of-2023-1536x1152.png"
-                                            alt="green iguana"
+                                            style={{ width: "100%", height:"50vh" }}
+                                            src="https://img.freepik.com/premium-photo/woman-space-suit-with-space-suit_662214-190635.jpg?w=2000"
+                                            alt="new-image"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h4" component="div">
@@ -74,6 +74,7 @@ function PageHeader() {
                             </article>
                         </Grid>
                     </Grid>
+                    <Box sx={{backgroundImage:"linear-gradient(to right, #1a51bb, #2f53c2, #3f55c8, #4d57ce, #5b59d4, #7758d3, #8f56d0, #a454cd, #c150c0, #d84eb1, #e951a2, #f65893)", width:"100%", position:"absolute"}}/>
                 </Box>
             </Container>
         </Box>

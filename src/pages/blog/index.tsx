@@ -41,13 +41,13 @@ function Blog() {
         <section>
           <FeaturedPost />
         </section>
-        <section>
+        {/* <section>
           <FeaturedAuthor />
-        </section>
+        </section> */}
       </main>
-      <footer>
+      {/* <footer>
         Footer
-      </footer>
+      </footer> */}
     </>
   );
 }

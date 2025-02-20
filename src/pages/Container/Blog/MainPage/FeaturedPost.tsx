@@ -76,8 +76,8 @@ function FeaturedPost() {
                                                         alt={post.slug}
                                                     />
                                                 </Link>
-                                                <Box sx={{ height: '250px', padding: "30px" }}>
-                                                    <Typography sx={{ textTransform: "uppercase", fontWeight: 600 }} gutterBottom variant="subtitle2" color="primary" component="div">
+                                                <Box sx={{ height: '250px', padding: "25px" }}>
+                                                    <Typography sx={{ textTransform: "uppercase", fontWeight: 700 }} gutterBottom variant="caption" color="secondary" component="div">
                                                         {post.series}
                                                     </Typography>
                                                     <Link href={`/blog/${post.slug}`}>
@@ -93,15 +93,6 @@ function FeaturedPost() {
                                                             }} variant="h5">
                                                                 {post.title}
                                                             </Typography>
-                                                            {/* <Typography gutterBottom sx={{
-                                                            overflow: 'hidden',
-                                                            mt: 1,
-                                                            display: '-webkit-box',
-                                                            WebkitBoxOrient: 'vertical',
-                                                            WebkitLineClamp: 2,
-                                                        }} variant="body2">
-                                                            {post.excerpt}
-                                                        </Typography> */}
                                                         </Box>
                                                     </Link>
 
